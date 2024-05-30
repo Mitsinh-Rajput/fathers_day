@@ -69,9 +69,26 @@ class _SplashScreenState extends State<SplashScreen>
               },
             ),
             if (authController.pageController.hasClients)
+              if (authController.pageController.page?.round() == 4)
+                Positioned(
+                  bottom: 40,
+                  left: 250,
+                  child: GestureDetector(
+                    onTap: () async {
+                      authController.forwardButton();
+                    },
+                    child: Container(
+                      height: 540,
+                      width: 800,
+                      color: Colors.transparent,
+                    ),
+                  ),
+                ),
+
+            if (authController.pageController.hasClients)
               if (authController.pageController.page == 0) const HomePage(),
             if (authController.pageController.hasClients)
-              if (authController.pageController.page ==
+              if (authController.pageController.page?.round() ==
                   authController.images.length - 1)
                 const Comments(),
 
@@ -936,7 +953,9 @@ class _CommentsState extends State<Comments> {
                 Align(
                   alignment: Alignment.centerRight,
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      authController.forwardButton();
+                    },
                     child: CustomImage(
                       path: Assets.imagesB3,
                       height: 50,

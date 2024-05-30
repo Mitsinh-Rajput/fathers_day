@@ -38,14 +38,14 @@ class AppConstants {
   set setBaseUrl(String url) => baseUrl = url;
 
   //TODO: Change Base Url
-  static String baseUrl = 'http://sunamphion.com/tam_def_servey/public/';
-  // static String baseUrl = 'http://192.168.1.21:8000/';
+  // static String baseUrl = 'http://sunamphion.com/tam_def_servey/public/';
+  static String baseUrl = 'http://192.168.1.20:8000/';
 
   ///USE FOR LOCAL
 
   static const String agoraAppId = 'c87b710048c049f59570bd1895b7e561';
 
-  static const String submitDa = 'api/v1/lead/store';
+  static const String submitDa = 'api/store';
 
   // Shared Key
   static const String token = 'user_app_token';

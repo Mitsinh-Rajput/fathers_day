@@ -43,12 +43,7 @@ class AuthController extends GetxController implements GetxService {
     "hq": null,
     "dr_name": null,
     "city": null,
-    "question_1": null,
-    "question_2": null,
-    "question_3": null,
-    "question_4": null,
-    "question_6": null,
-    "question_7": null,
+    "comment": null,
   };
   TextEditingController oneController = TextEditingController();
   TextEditingController twoController = TextEditingController();
@@ -134,9 +129,8 @@ class AuthController extends GetxController implements GetxService {
   forwardButton() async {
     focusNode.unfocus();
     if (pageController.page! < images.length && validatePages()) {
-      if (pageController.page! == 5 && QuestionfourthAnswer == "No") {
-        await pageController.animateToPage((pageController.page! + 2).round(),
-            duration: const Duration(milliseconds: 50), curve: Curves.ease);
+      if (pageController.page! == 4) {
+        pageController.jumpToPage(5);
         update();
       } else if (pageController.page! == images.length - 1 && validatePages()) {
         submitForm();
@@ -200,21 +194,8 @@ class AuthController extends GetxController implements GetxService {
     data['dr_name'] = twoController.text;
     data['hq'] = threeController.text;
     data['city'] = fourController.text;
-    data['question_1'] = QuestionOneAnswer;
-    data['question_2'] = QuestionSecondAnswer.text.trim();
-    data['question_3'] = QuestionThirdAnswer;
-    data['question_4'] = QuestionfourthAnswer;
-    data['question_6'] = QuestionSixAnswer;
-    data['question_7'] = QuestionSevenAnswer.text.trim();
-    if (QuestionfourthAnswer == "Yes") {
-      data.addAll({
-        "question_5":
-            "Efficiency-${QuestionfifthValues[0]},Safety-${QuestionfifthValues[1]}"
-      });
-    }
-    if (QuestionThirdAnswer == "Others (Pls specify)") {
-      data['question_3'] = QuestionThirdAnswerForOther.text;
-    }
+    data['question_1'] = comments.text;
+
     if (await connectivity()) {
       //API CALL
       log(
