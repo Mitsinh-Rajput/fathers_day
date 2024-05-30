@@ -68,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
               if (authController.pageController.page?.round() == 4)
                 Positioned(
                   bottom: 40,
-                  left: 250,
+                  left: 150,
                   child: GestureDetector(
                     onTap: () async {
                       authController.forwardButton();
