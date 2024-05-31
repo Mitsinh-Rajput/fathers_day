@@ -105,7 +105,6 @@ class AuthController extends GetxController implements GetxService {
     Assets.imagesD3,
     Assets.imagesD4,
     Assets.imagesD10,
-    Assets.imagesD5,
     Assets.imagesD6,
     Assets.imagesD7,
     Assets.imagesBG,
