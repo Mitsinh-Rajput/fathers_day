@@ -2,49 +2,41 @@
 class Assets {
   Assets._();
 
-  static const String assetsFontsAgencyGothicCT =
-      'assets/fonts/AgencyGothicCT.ttf';
-  static const String audiosCorrectSelection =
-      'assets/audios/correct_selection.mp3';
-  static const String audiosInvalidSelection =
-      'assets/audios/invalid_selection.mp3';
+  static const String assetsFontsAgencyGothicCT = 'assets/fonts/AgencyGothicCT.ttf';
+  static const String audiosCorrectSelection = 'assets/audios/correct_selection.mp3';
+  static const String audiosInvalidSelection = 'assets/audios/invalid_selection.mp3';
   static const String fontsAgencyGothicCT = 'assets/fonts/AgencyGothicCT.ttf';
-  static const String fontsAvrileSerifRegular =
-      'assets/fonts/AvrileSerif-Regular.ttf';
-  static const String fontsBaiJamjureeMedium =
-      'assets/fonts/BaiJamjuree-Medium.ttf';
-  static const String fontsCcUltimatumBold =
-      'assets/fonts/cc-ultimatum-bold.otf';
-  static const String fontsCcUltimatumLight =
-      'assets/fonts/cc-ultimatum-light.otf';
-  static const String fontsCcUltimatumRegular =
-      'assets/fonts/cc-ultimatum-regular.otf';
-  static const String fontsJosefinSansBold =
-      'assets/fonts/JosefinSans-Bold.ttf';
-  static const String fontsMacklinDisplayMedium =
-      'assets/fonts/MacklinDisplay-Medium.ttf';
+  static const String fontsAvrileSerifRegular = 'assets/fonts/AvrileSerif-Regular.ttf';
+  static const String fontsBaiJamjureeMedium = 'assets/fonts/BaiJamjuree-Medium.ttf';
+  static const String fontsCcUltimatumBold = 'assets/fonts/cc-ultimatum-bold.otf';
+  static const String fontsCcUltimatumLight = 'assets/fonts/cc-ultimatum-light.otf';
+  static const String fontsCcUltimatumRegular = 'assets/fonts/cc-ultimatum-regular.otf';
+  static const String fontsJosefinSansBold = 'assets/fonts/JosefinSans-Bold.ttf';
+  static const String fontsMacklinDisplayMedium = 'assets/fonts/MacklinDisplay-Medium.ttf';
   static const String images2D = 'assets/images/2D.jpg';
-  static const String imagesB4 = 'assets/images/B 4.png';
-  static const String imagesB3 = 'assets/images/B 3.png';
+  static const String images4BG = 'assets/images/4BG.jpg';
+  static const String imagesB 3 = 'assets/images/B 3.png';
+  static const String imagesB 4 = 'assets/images/B 4.png';
   static const String imagesBG = 'assets/images/BG.jpg';
-  static const String imagesD10 = 'assets/images/D 10.jpg';
-  static const String imagesD3 = 'assets/images/D 3.jpg';
-  static const String imagesD4 = 'assets/images/D 4.jpg';
-  static const String imagesD6 = 'assets/images/D 6.jpg';
-  static const String imagesD7 = 'assets/images/D 7.jpg';
-  static const String imagesD8 = 'assets/images/D 8.jpg';
-  static const String imagesD9 = 'assets/images/D 9.jpg';
+  static const String imagesD 10 = 'assets/images/D 10.jpg';
+  static const String imagesD 11 = 'assets/images/D 11.png';
+  static const String imagesD 3 = 'assets/images/D 3.jpg';
+  static const String imagesD 4 = 'assets/images/D 4.jpg';
+  static const String imagesD 6 = 'assets/images/D 6.jpg';
+  static const String imagesD 7 = 'assets/images/D 7.jpg';
+  static const String imagesD 8 = 'assets/images/D 8.jpg';
+  static const String imagesD 9 = 'assets/images/D 9.jpg';
   static const String imagesD5 = 'assets/images/D5.jpg';
+  static const String imagesDAD logo = 'assets/images/DAD logo.png';
   static const String imagesExclaim = 'assets/images/exclaim.png';
   static const String imagesForwardBlue = 'assets/images/forward_blue.png';
   static const String imagesHOME = 'assets/images/HOME.png';
-  static const String imagesLOGO = 'assets/images/LOGO .png';
-  static const String imagesLOGO1 = 'assets/images/LOGO 1.png';
+  static const String imagesLOGO  = 'assets/images/LOGO .png';
+  static const String imagesLOGO 1 = 'assets/images/LOGO 1.png';
   static const String imagesLogo = 'assets/images/logo.png';
   static const String imagesPlaceholder = 'assets/images/placeholder.jpg';
   static const String imagesShimmer = 'assets/images/shimmer.gif';
   static const String imagesSyncBlue = 'assets/images/sync_blue.png';
-  static const String imagesDADlogo = 'assets/images/DAD logo.png';
   static const String pngs1 = 'assets/images/pngs/1.png';
   static const String pngs10 = 'assets/images/pngs/10.png';
   static const String pngs11 = 'assets/images/pngs/11.png';
@@ -80,4 +72,5 @@ class Assets {
   static const String pngs7 = 'assets/images/pngs/7.png';
   static const String pngs8 = 'assets/images/pngs/8.png';
   static const String pngs9 = 'assets/images/pngs/9.png';
+
 }

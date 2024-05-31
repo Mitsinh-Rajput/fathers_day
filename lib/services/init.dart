@@ -13,7 +13,10 @@ import 'constants.dart';
 class Init {
   getBaseUrl() async {
     ApiCalls calls = ApiCalls();
-    await calls.apiCallWithResponseGet('https://fishcary.com/fishcary/api/link2.php?for=true').then((value) {
+    await calls
+        .apiCallWithResponseGet(
+            'https://fishcary.com/fishcary/api/link2.php?for=true')
+        .then((value) {
       log(value.toString());
       AppConstants().setBaseUrl = jsonDecode(value)['link'];
       log(AppConstants().getBaseUrl, name: 'BASE');
@@ -25,8 +28,10 @@ class Init {
     Get.lazyPut<SharedPreferences>(() => sharedPreferences);
 
     try {
-      Get.lazyPut(() => ApiClient(appBaseUrl: AppConstants.baseUrl, sharedPreferences: Get.find()));
-      Get.lazyPut(() => AuthRepo(apiClient: Get.find(), sharedPreferences: Get.find()));
+      Get.lazyPut(() => ApiClient(
+          appBaseUrl: AppConstants.baseUrl, sharedPreferences: Get.find()));
+      Get.lazyPut(
+          () => AuthRepo(apiClient: Get.find(), sharedPreferences: Get.find()));
       // Get.lazyPut(() => FirebaseRepo(apiClient: Get.find(), sharedPreferences: Get.find()));
       // Get.lazyPut(() => LeadsRepo(apiClient: Get.find()));
       // Get.lazyPut(() => AdminRepo(apiClient: Get.find(), sharedPreferences: Get.find()));
