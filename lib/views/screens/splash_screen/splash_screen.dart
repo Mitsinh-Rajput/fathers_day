@@ -91,7 +91,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                         height: size.height,
                         // fit: BoxFit.fill,
                       ),
-                      Positioned(
+                      const Positioned(
                         bottom: 20,
                         left: 0,
                         right: 0,
@@ -259,7 +259,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                   ..setEntry(3, 2, 0.001)
                                   ..rotateY(angle - 270.0),
                                 child: _animation.value <= 0.5
-                                    ? CustomImage(
+                                    ? const CustomImage(
                                         path: Assets.pngs8,
                                         height: 180,
                                         width: 180,
