@@ -14,6 +14,8 @@ class Assets {
   static const String fontsJosefinSansBold = 'assets/fonts/JosefinSans-Bold.ttf';
   static const String fontsMacklinDisplayMedium = 'assets/fonts/MacklinDisplay-Medium.ttf';
   static const String images2D = 'assets/images/2D.jpg';
+  static const String imagesTreebg = 'assets/images/treebg.jpg';
+
   static const String images4BG = 'assets/images/4BG.jpg';
   static const String imagesB3 = 'assets/images/B 3.png';
   static const String imagesB4 = 'assets/images/B 4.png';

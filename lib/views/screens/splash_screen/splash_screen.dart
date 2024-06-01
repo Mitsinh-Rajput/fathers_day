@@ -89,15 +89,17 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                         path: authController.images[index],
                         width: size.width,
                         height: size.height,
+                        // fit: BoxFit.fill,
                       ),
-                      // Positioned(
-                      //   bottom: 0,
-                      //   left: (size.width / 2)-200,
-                      //   child: CustomImage(
-                      //     path: Assets.pngs11,
-                      //     height: 400,
-                      //   ),
-                      // ),
+                      Positioned(
+                        bottom: 20,
+                        left: 0,
+                        right: 0,
+                        child: CustomImage(
+                          path: Assets.pngs11,
+                          height: 485,
+                        ),
+                      ),
                       Positioned(
                         top: 270,
                         left: 172,
