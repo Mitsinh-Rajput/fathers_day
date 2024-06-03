@@ -26,8 +26,7 @@ void main() async {
 }
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
-final GlobalKey<ScaffoldMessengerState> snackBarKey =
-    GlobalKey<ScaffoldMessengerState>();
+final GlobalKey<ScaffoldMessengerState> snackBarKey = GlobalKey<ScaffoldMessengerState>();
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -54,12 +53,9 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     Timer.run(() async {
-      await SystemChrome.setPreferredOrientations(
-          [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
       if (await Get.find<AuthController>().connectivity()) {
         SharedPreferences sharedPreferences = Get.find();
-        List<dynamic> savedData =
-            jsonDecode(sharedPreferences.getString('saved_data') ?? '[]');
+        List<dynamic> savedData = jsonDecode(sharedPreferences.getString('saved_data') ?? '[]');
         List remaining = [];
         if (savedData.isNotEmpty) {
           log(savedData.toString(), name: "Data available");

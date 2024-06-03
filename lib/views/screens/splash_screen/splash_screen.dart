@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 import '../../../controllers/auth_controller.dart';
@@ -31,7 +30,6 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     );
     _animation = Tween<double>(begin: 0, end: 1).animate(_controller);
     Timer.run(() async {
-      await SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
       Future.delayed(const Duration(seconds: 2), () {
         setState(() {});
       });
