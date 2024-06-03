@@ -47,6 +47,7 @@ class AuthController extends GetxController implements GetxService {
   };
   TextEditingController oneController = TextEditingController();
   TextEditingController twoController = TextEditingController();
+  TextEditingController specialtyController = TextEditingController();
   TextEditingController threeController = TextEditingController();
   TextEditingController fourController = TextEditingController();
   TextEditingController comments = TextEditingController();
@@ -141,7 +142,7 @@ class AuthController extends GetxController implements GetxService {
     if (pageController.page! == 0) {
       return true;
     } else if (pageController.page! == 1) {
-      if (oneController.text.isValid && twoController.text.isValid && threeController.text.isValid && fourController.text.isValid) {
+      if (oneController.text.isValid && twoController.text.isValid && specialtyController.text.isValid && threeController.text.isValid && fourController.text.isValid) {
         return true;
       }
       Fluttertoast.showToast(msg: "Please enter all data");
@@ -162,6 +163,7 @@ class AuthController extends GetxController implements GetxService {
     await pageController.animateToPage(0, duration: const Duration(milliseconds: 50), curve: Curves.ease);
     oneController.clear();
     twoController.clear();
+    specialtyController.clear();
     threeController.clear();
     fourController.clear();
     comments.clear();
@@ -180,9 +182,10 @@ class AuthController extends GetxController implements GetxService {
   submitForm() async {
     data['se_name'] = oneController.text;
     data['dr_name'] = twoController.text;
+    data['specialty'] = specialtyController.text;
     data['hq'] = threeController.text;
     data['city'] = fourController.text;
-    data['question_1'] = comments.text;
+    data['comment'] = comments.text;
 
     if (await connectivity()) {
       //API CALL
