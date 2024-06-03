@@ -35,10 +35,12 @@ String getStringFromList(List<dynamic>? data) {
 
 class AppConstants {
   get getBaseUrl => baseUrl;
+
   set setBaseUrl(String url) => baseUrl = url;
 
   //TODO: Change Base Url
   static String baseUrl = 'http://sunamphion.com/fathers_day/public/';
+
   // static String baseUrl = 'http://192.168.1.20:8000/';
 
   ///USE FOR LOCAL
