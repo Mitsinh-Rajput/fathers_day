@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
       vsync: this,
     );
     _animation = Tween<double>(begin: 0, end: 1).animate(_controller);
@@ -115,7 +115,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                   ..setEntry(3, 2, 0.001)
                                   ..rotateY(angle - 270.0),
                                 child: _animation.value <= 0.5
-                                    ? CustomImage(
+                                    ? const CustomImage(
                                         path: Assets.pngs1,
                                         height: 180,
                                         width: 180,
@@ -125,7 +125,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                         child: Transform(
                                             alignment: Alignment.center,
                                             transform: Matrix4.identity(),
-                                            child: CustomImage(
+                                            child: const CustomImage(
                                               path: Assets.pngs14,
                                               height: 180,
                                               width: 180,
@@ -151,7 +151,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                   ..setEntry(3, 2, 0.001)
                                   ..rotateY(angle - 270.0),
                                 child: _animation.value <= 0.5
-                                    ? CustomImage(
+                                    ? const CustomImage(
                                         path: Assets.pngs2,
                                         height: 190,
                                         width: 190,
@@ -161,7 +161,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                         child: Transform(
                                             alignment: Alignment.center,
                                             transform: Matrix4.identity(),
-                                            child: CustomImage(
+                                            child: const CustomImage(
                                               path: Assets.pngs15,
                                               height: 190,
                                               width: 190,
@@ -187,7 +187,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                   ..setEntry(3, 2, 0.001)
                                   ..rotateY(angle - 270.0),
                                 child: _animation.value <= 0.5
-                                    ? CustomImage(
+                                    ? const CustomImage(
                                         path: Assets.pngs3,
                                         height: 190,
                                         width: 190,
@@ -197,7 +197,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                         child: Transform(
                                             alignment: Alignment.center,
                                             transform: Matrix4.identity(),
-                                            child: CustomImage(
+                                            child: const CustomImage(
                                               path: Assets.pngs16,
                                               height: 190,
                                               width: 190,
@@ -223,7 +223,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                   ..setEntry(3, 2, 0.001)
                                   ..rotateY(angle - 270.0),
                                 child: _animation.value <= 0.5
-                                    ? CustomImage(
+                                    ? const CustomImage(
                                         path: Assets.pngs4,
                                         height: 180,
                                         width: 180,
@@ -233,7 +233,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                         child: Transform(
                                             alignment: Alignment.center,
                                             transform: Matrix4.identity(),
-                                            child: CustomImage(
+                                            child: const CustomImage(
                                               path: Assets.pngs17,
                                               height: 180,
                                               width: 180,
@@ -269,7 +269,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                         child: Transform(
                                             alignment: Alignment.center,
                                             transform: Matrix4.identity(),
-                                            child: CustomImage(
+                                            child: const CustomImage(
                                               path: Assets.pngs18,
                                               height: 180,
                                               width: 180,
@@ -295,7 +295,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                   ..setEntry(3, 2, 0.001)
                                   ..rotateY(angle - 270.0),
                                 child: _animation.value <= 0.5
-                                    ? CustomImage(
+                                    ? const CustomImage(
                                         path: Assets.pngs5,
                                         height: 180,
                                         width: 180,
@@ -305,7 +305,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                         child: Transform(
                                             alignment: Alignment.center,
                                             transform: Matrix4.identity(),
-                                            child: CustomImage(
+                                            child: const CustomImage(
                                               path: Assets.pngs18,
                                               height: 180,
                                               width: 180,
@@ -331,7 +331,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                   ..setEntry(3, 2, 0.001)
                                   ..rotateY(angle - 270.0),
                                 child: _animation.value <= 0.5
-                                    ? CustomImage(
+                                    ? const CustomImage(
                                         path: Assets.pngs6,
                                         height: 180,
                                         width: 180,
@@ -341,7 +341,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                         child: Transform(
                                             alignment: Alignment.center,
                                             transform: Matrix4.identity(),
-                                            child: CustomImage(
+                                            child: const CustomImage(
                                               path: Assets.pngs19,
                                               height: 180,
                                               width: 180,
@@ -367,7 +367,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                   ..setEntry(3, 2, 0.001)
                                   ..rotateY(angle - 270.0),
                                 child: _animation.value <= 0.5
-                                    ? CustomImage(
+                                    ? const CustomImage(
                                         path: Assets.pngs7,
                                         height: 200,
                                         width: 200,
@@ -377,7 +377,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                         child: Transform(
                                             alignment: Alignment.center,
                                             transform: Matrix4.identity(),
-                                            child: CustomImage(
+                                            child: const CustomImage(
                                               path: Assets.pngs20,
                                               height: 200,
                                               width: 200,
@@ -403,7 +403,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                   ..setEntry(3, 2, 0.001)
                                   ..rotateY(angle - 270.0),
                                 child: _animation.value <= 0.5
-                                    ? CustomImage(
+                                    ? const CustomImage(
                                         path: Assets.pngs10,
                                         height: 180,
                                         width: 180,
@@ -413,7 +413,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                         child: Transform(
                                             alignment: Alignment.center,
                                             transform: Matrix4.identity(),
-                                            child: CustomImage(
+                                            child: const CustomImage(
                                               path: Assets.pngs23,
                                               height: 180,
                                               width: 180,
@@ -439,7 +439,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                   ..setEntry(3, 2, 0.001)
                                   ..rotateY(angle - 270.0),
                                 child: _animation.value <= 0.5
-                                    ? CustomImage(
+                                    ? const CustomImage(
                                         path: Assets.pngs9,
                                         height: 180,
                                         width: 180,
@@ -449,7 +449,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                                         child: Transform(
                                             alignment: Alignment.center,
                                             transform: Matrix4.identity(),
-                                            child: CustomImage(
+                                            child: const CustomImage(
                                               path: Assets.pngs22,
                                               height: 180,
                                               width: 180,
