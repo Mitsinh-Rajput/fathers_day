@@ -75,6 +75,10 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                 log("${authController.pageController.page}");
                 authController.index = va;
                 authController.update();
+                log("$va", name: "Index");
+                if (va == 0) {
+                  _controller.reset();
+                }
               },
               itemBuilder: (BuildContext context, int index) {
                 if (index == 1) {
